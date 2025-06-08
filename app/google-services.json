@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "602618550037",
+    "project_id": "splitwise-b940e",
+    "storage_bucket": "splitwise-b940e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602618550037:android:2581df1cc1aa6fb2d63b1c",
+        "android_client_info": {
+          "package_name": "com.example.spliteasy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602618550037-imehl7v579d8h58rrsdu22rijcfdn04b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.spliteasy",
+            "certificate_hash": "56245099583ca52996066bcf2fb0376d79b501ac"
+          }
+        },
+        {
+          "client_id": "602618550037-gg4a4ct439f419ck34s812v23hau2ilt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCL4iJGoihu8HqmSRCabHO_3Tbw8iz3DG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602618550037-gg4a4ct439f419ck34s812v23hau2ilt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
