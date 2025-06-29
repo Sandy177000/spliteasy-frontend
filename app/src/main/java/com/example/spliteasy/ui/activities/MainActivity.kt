@@ -1,10 +1,6 @@
 package com.example.spliteasy.ui.activities
 
 import android.os.Bundle
-import android.widget.ArrayAdapter
-import android.widget.Button
-import android.widget.ListView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.spliteasy.R
@@ -41,12 +37,9 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
-
-
     }
 
     private fun openFragment(fragment: Fragment) {
-        println()
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragmentContainer, fragment)
             .commit()

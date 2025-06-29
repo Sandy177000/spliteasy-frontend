@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/groupsLayout"
@@ -12,19 +11,77 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clipToPadding="false"
-        android:paddingBottom="72dp" />
+        android:paddingBottom="100dp" />
 
-    <!-- FAB to add new group -->
+    <!-- Add Expense FAB + Label -->
+    <LinearLayout
+        android:id="@+id/fabExpenseLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_alignEnd="@id/addGroupFab"
+        android:layout_above="@id/fabGroupLayout"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/labelAddExpense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Expense"
+            android:textColor="@android:color/black"
+            android:layout_marginEnd="8dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAddExpense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_expense"
+            app:backgroundTint="@android:color/holo_blue_dark"
+            app:tint="@android:color/white" />
+    </LinearLayout>
+
+    <!-- Add Group FAB + Label -->
+    <LinearLayout
+        android:id="@+id/fabGroupLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_alignEnd="@id/addGroupFab"
+        android:layout_above="@id/addGroupFab"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/labelAddGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Group"
+            android:textColor="@android:color/black"
+            android:layout_marginEnd="8dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAddGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_group"
+            app:tint="@android:color/white"
+            app:backgroundTint="@android:color/holo_green_dark" />
+    </LinearLayout>
+
+    <!-- Main FAB to open options -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/addGroupFab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/add_group"
+        android:contentDescription="Main FAB"
         android:src="@drawable/ic_add"
         app:tint="@android:color/white"
         app:backgroundTint="@android:color/black"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="100dp"
-        android:layout_marginEnd="5dp" />
+        android:layout_marginEnd="16dp" />
 </RelativeLayout>

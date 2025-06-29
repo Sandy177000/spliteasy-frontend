@@ -56,6 +56,14 @@
                 android:textColor="@android:color/black" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <TextView
+            android:id="@+id/errorMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp" />
+
         <Button
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
@@ -75,10 +83,10 @@
             android:layout_marginTop="16dp" />
 
         <Button
-            android:id="@+id/btnGoogleLogin"
+            android:id="@+id/btnSignup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login using Google"
+            android:text="Signup"
             android:layout_marginTop="24dp"
             android:padding="15dp"
             android:backgroundTint="@android:color/black"
